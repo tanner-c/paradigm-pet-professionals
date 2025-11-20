@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/paradigm-pet-professionals'>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
