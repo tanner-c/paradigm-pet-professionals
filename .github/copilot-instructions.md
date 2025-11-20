@@ -1,0 +1,1 @@
+In CSS files, suggest Tailwind CSS classes and utilities.
