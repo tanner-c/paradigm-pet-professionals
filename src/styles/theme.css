@@ -1,0 +1,49 @@
+@property --primary-color-midnight-blue {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #003B6D;
+}
+
+@property --accent-color-blue-sky {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #6699CC;
+}
+
+@property --accent-color-blue-sky-dark {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #5C8AB8;
+}
+
+@property --secondary-color-dim-gray {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #676767;
+}
+
+@property --secondary-color-silver {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #BDBDBD;
+}
+
+.background-color-primary {
+    background-color: var(--primary-color-midnight-blue);
+}
+
+.background-color-accent {
+    background-color: var(--accent-color-blue-sky);
+}
+
+.background-color-accent-dark {
+    background-color: var(--accent-color-blue-sky-dark);
+}
+
+.text-color-secondary {
+    color: var(--secondary-color-dim-gray);
+}
+
+.text-color-silver {
+    color: var(--secondary-color-silver);
+}
