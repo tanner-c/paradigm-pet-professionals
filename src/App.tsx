@@ -5,14 +5,14 @@ import Dogs from './pages/Dogs';
 import Birds from './pages/Birds';
 import FAQ from './pages/FAQ';
 import Consultation from './pages/Consultation';
-import { BrowserRouter, Routes, Route } from 'react-router';
+import { Routes, Route, HashRouter } from 'react-router';
 import Home from './pages/Home';
 
 function App() {
 
   return (
     <>
-      <BrowserRouter basename='/paradigm-pet-professionals'>
+      <HashRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,7 +22,7 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/consultation" element={<Consultation />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }

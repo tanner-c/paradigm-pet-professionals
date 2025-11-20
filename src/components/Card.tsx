@@ -17,13 +17,14 @@ export default function Card({
 }) {
   return (
     // outer wrapper controls responsive width: full on mobile, 1/3 on md, 1/4 on lg
-    <div className={`w-full md:w-1/${numberOfCards} p-4`}>
+    <div className={`w-full ${numberOfCards === 3 ? "md:w-1/3" : numberOfCards === 4 ? "md:w-1/4" : ""} p-4`}>
       <div className="
-        bg-linear-to-br
+        bg-gradient-to-br
         from-white
         to-slate-50
         md:rounded-2xl
         md:shadow-md
+        ring-1
         lg:ring-1
         ring-slate-200 
         overflow-hidden 
