@@ -21,19 +21,9 @@ export default function BlogPost(
   }
 ) {
   return (
-    <div className="prose lg:prose-xl mx-auto my-8">
+    <div className="mx-auto my-8">
       <div
-        className={`
-          relative
-          w-full 
-          bg-center 
-          bg-cover
-          h-64 
-          md:h-96 
-          mb-6 
-          rounded-lg 
-          overflow-hidden
-        `}
+        className="lg:w-11/12 mx-auto relative w-full bg-center bg-cover h-64 md:h-96 mb-6 rounded-lg overflow-hidden"
         style={{ backgroundImage: `url(${image})` }}>
         <h1 className="
             absolute
@@ -61,7 +51,9 @@ export default function BlogPost(
           <div className="shadow-md bg-gray-100 rounded-full p-1 w-12 h-12 flex items-center justify-center">
             {placeholderAvatarSvg}
           </div>
-          <p>By {author} - Published on {new Date(date).toLocaleDateString()}</p>
+          <p>
+            By {author} - Published on {new Date(date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+          </p>
         </div>
       </div>
     </div>

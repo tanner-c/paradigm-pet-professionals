@@ -9,15 +9,15 @@ export default function Cats() {
     <PageContainer>
       <BlogPost
         author="Tanner Carter"
-        title="All About Cats"
-        date={new Date().toISOString()}
+        title="The Cat’s Meow: A Pawsitively Essential Guide to Feline Growth & Care"
+        date="2025-11-20T00:00:00.000Z"
         image={catImage}
       >
         <p>Cats were first domesticated around 7500 BCE in the western Asia region and are currently the second most popular domestic pet in the United States. While there are over 60 unique documented cat breeds, care and diet can differ between breeds. However, some diets and practices are generally recommended for the well-being of your fluffy family member regardless of breed.</p>
 
         <h2 className={h2Classes}>Zero to Four Weeks</h2>
         <p>It is important the queen (a term commonly used for a female cat that is either pregnant or nursing) directly nurse her young if possible. Monitor your kitten’s growth closely to make sure its growth rate is progressing steadily. If any kitten is not growing at a sufficient rate, a caretaker might need to feed the kitten directly either with a bottle or a feeding tube. Some reasons why kittens might not gain weight appropriately include the following:</p>
-        <ul>
+        <ul className="list-disc list-inside ml-4 mt-4">
           <li>too many other siblings are competing for mom's milk</li>
           <li>gastrointestinal disease</li>
           <li>environmental conditions such as extreme heat or cold, or unsanitary conditions</li>

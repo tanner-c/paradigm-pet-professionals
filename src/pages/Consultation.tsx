@@ -1,5 +1,9 @@
+import ConsultationForm from "../components/ConsultationForm";
+
 export default function Consultation() {
   return (
-    <p>Welcome to the Consultation page!</p>
+    <div className="mt-12">
+      <ConsultationForm />
+    </div>
   );
 }

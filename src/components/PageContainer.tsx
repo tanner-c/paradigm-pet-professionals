@@ -7,12 +7,18 @@ export default function PageContainer({ children }: { children: React.ReactNode 
       sm:px-6 
       lg:px-8
       xl:shadow-xl
-      xl:border
-      border-(--secondary-color-dim-gray)
       bg-white
       mb-12
       mt-12
-      rounded-2xl
+      pt-8
+      pb-8
+      xl:rounded-2xl
+      bg-linear-to-br
+      from-white
+      to-slate-50
+      shadow-md
+      xl:ring-1
+      ring-slate-200
     `}>
       {children}
     </div>
