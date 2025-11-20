@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import dogImage from '../assets/dog-hero.jpg';
 
 export default function Hero() {
@@ -37,8 +38,7 @@ export default function Hero() {
         <h1
           className={`
             text-4xl
-            sm:text-5xl
-            md:text-6xl
+            md:text-5xl
             font-extrabold
             text-white
             leading-tight
@@ -53,13 +53,14 @@ export default function Hero() {
             text-lg
             sm:text-xl
             text-white/85
-            mb-6
+            mb-20
           `}
         >
           Paradigm Pet Professionals has 12 years' experience working with pet owners, certifications in pet health and nutrition, and customer recognition for outstanding support
         </p>
 
-        <button
+        <Link
+          to="/consultation"
           className={`
             bg-(--accent-color-blue-sky)
             hover:bg-(--accent-color-blue-sky-dark)
@@ -67,6 +68,7 @@ export default function Hero() {
             rounded-2xl
             h-12
             px-10
+            py-3
             w-full
             md:w-auto
             transition-colors
@@ -75,7 +77,7 @@ export default function Hero() {
           `}
         >
           See What's Pawsible
-        </button>
+        </Link>
       </div>
     </section>
   );

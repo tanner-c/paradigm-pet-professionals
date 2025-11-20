@@ -2,6 +2,7 @@ import logo from '../assets/logo.png';
 import { useState } from 'react';
 import './Header.css';
 import Navbar from './Navbar';
+import { Link } from 'react-router';
 
 
 function SearchAndConsultButton() {
@@ -27,7 +28,8 @@ function SearchAndConsultButton() {
           type="text"
           placeholder="Search..."
         />
-        <button
+        <Link
+          to="/consultation"
           className={`
             bg-(--accent-color-blue-sky)
             hover:bg-(--accent-color-blue-sky-dark)
@@ -35,14 +37,15 @@ function SearchAndConsultButton() {
             rounded-2xl
             h-10
             px-4
+            py-2
+            text-center
             w-full md:w-auto
             transition-colors
             duration-150
           `}
-          type="button"
         >
           Request Consultation
-        </button>
+        </Link>
       </div>
     </>
   );
