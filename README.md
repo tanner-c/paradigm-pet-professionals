@@ -1,5 +1,7 @@
 # Paradigm Pet Professionals
 
+[Visit Website](https://tanner-c.github.io/paradigm-pet-professionals/)
+
 This is the official website for Paradigm Pet Professionals, your trusted source for expert pet care advice and services. Our mission is to provide pet owners with the knowledge and resources they need to ensure their furry, feathered, or scaled friends lead happy and healthy lives.
 
 This project was completed as a school assignment, and demonstrates proficiency in React, TypeScript, and Tailwind CSS.
