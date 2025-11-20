@@ -43,6 +43,7 @@ function SearchAndConsultButton() {
             transition-colors
             duration-150
           `}
+          type="button"
         >
           Request Consultation
         </Link>
@@ -65,7 +66,9 @@ export default function Header() {
           w-full
         `}
       >
-        <img src={logo} className="h-12" alt="logo" />
+        <Link to="/">
+          <img src={logo} className="h-12" alt="logo" />
+        </Link>
 
         <div className="hidden md:flex">
           <div className="flex items-center">

@@ -8,7 +8,7 @@ export default function Hero() {
       className={`
         z-0
         relative
-        h-140
+        h-[560px]
         bg-cover
         bg-center
         flex
